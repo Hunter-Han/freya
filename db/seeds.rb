@@ -16,3 +16,32 @@ counties_array = %w[Bedfordshire Berkshire Buckinghamshire Cambridgeshire Cheshi
 counties_array.each do |county|
   County.create!(name: county)
 end
+
+vegetable = FoodGroup.create!(name: "Vegetable")
+fruit = FoodGroup.create!(name: "Fruit")
+fish = FoodGroup.create!(name: "Fish")
+meat = FoodGroup.create!(name: "Meat")
+
+#10 x vegetables
+
+# 10 x fish/shellfish - mackerel,
+
+mackerel = Ingredient.new(
+  food_group: fish,
+  name: "Mackerel"
+  )
+
+mackerel.remote_background_picture_url = "http"
+mackerel.remote_thumbnail_picture_url = "http"
+
+# 10 x meat - pheasants, venison, beef, pigeon, rabbit, lamb,
+
+# 10 x fruit
+
+
+
+# 10 x fishmongers
+
+# 20 x farmshops
+
+# local meat
