@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' } { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+County.delete_all
 
 counties_array = %w[Bedfordshire Berkshire Buckinghamshire Cambridgeshire Cheshire
   Cornwall Cumberland Derbyshire Devon Dorset County Durham Essex Gloucestershire

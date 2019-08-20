@@ -1,1 +1,37 @@
-// Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap');
+
+.home-main-div {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.logo-box {
+}
+
+.title-box-home {
+ h1 { font-family: 'Amatic SC', bold;
+  font-size: 72px;
+  font-style: bold;
+  font-variant: bold;
+  font-weight: 700;
+  line-height: 26.4px;
+  letter-spacing: 14px;
+   }
+}
+
+.search-and-submit {
+  display: flex;
+}
+
+.big-picture {
+  background-image: url(blueberries-girl-two.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: #eee;
+  margin-top: -63px;
+}
