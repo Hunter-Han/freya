@@ -7,13 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 County.delete_all
 
-counties_array = %w[Bedfordshire Berkshire Buckinghamshire Cambridgeshire Cheshire
-  Cornwall Cumberland Derbyshire Devon Dorset County Durham Essex Gloucestershire
-  Hampshire Herefordshire Hertfordshire Huntingdonshire Kent Lancashire Leicestershire
-  Lincolnshire Middlesex Norfolk Northamptonshire Northumberland Nottinghamshire
-  Oxfordshire Rutland Shropshire Somerset Staffordshire Suffolk Surrey Sussex
-  Warwickshire Westmorland Wiltshire Worcestershire Yorkshire]
+puts "deleting everthing"
+IngredientAtVendor.destroy_all
+IngredientSeason.destroy_all
+Ingredient.destroy_all
+Review.destroy_all
+County.destroy_all
+FoodGroup.destroy_all
+Vendor.destroy_all
+User.destroy_all
 
-counties_array.each do |county|
-  County.create!(name: county)
+Dir[File.join(Rails.root, 'db', 'seeds', '*.rb')].sort.each do |seed|
+  load seed
 end
+
