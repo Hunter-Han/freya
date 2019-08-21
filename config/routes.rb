@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :ingredient_at_vendors
   resources :ingredient_seasons, only: [:index, :show]
   resources :review, except: [:edit, :update]
-  resources :user
+  resources :users
   resources :vendor
 
 

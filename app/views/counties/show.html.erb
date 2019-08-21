@@ -1,4 +1,47 @@
+<div class="show-county-background">
 <div class="background-sussex">
-  <h1>heyyy</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="county-name-and-search">
+  <h1><%= @county.name %></h1>
+  <%= form_tag county_search_path, method: :get do %>
+  <br>
+  <div class="search-and-submit-box">
+  <%= text_field_tag :query, nil, input_html: {class: "form-control"},
+    placeholder: "Find seasonal food!"%>
+  <%= submit_tag "Ask Freya", class: "btn btn-primary" %>
+  </div>
+
+<% end %>
 </div>
-<p>this is the show page of <%= @county.name %></p>
+<div class="county-show-card-box">
+
+<div class="food-type-card meat">
+  <div class="food-type-textbox">
+    <p>Meats</p>
+  </div>
+</div>
+
+<div class="food-type-card fish">
+  <div class="food-type-textbox">
+    <p>Seafood</p>
+  </div>
+</div>
+
+<div class="food-type-card fruit">
+   <div class="food-type-textbox">
+    <p>Fruits</p>
+  </div>
+</div>
+
+<div class="food-type-card vegetable">
+  <div class="food-type-textbox">
+    <p>Vegetables</p>
+  </div>
+</div>
+
+</div>
+
+</div>
