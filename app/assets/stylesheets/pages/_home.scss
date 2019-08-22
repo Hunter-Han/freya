@@ -26,6 +26,17 @@
 
 .search-and-submit-box {
   display: flex;
+
+  .btn.btn-primary {
+  background-color: #FF6D24;
+  border-color: #FF6D24;
+  border-radius: 0 5px 5px 0;
+  }
+
+  .form-control-home {
+    border-radius: 5px 0 0 5px !important;
+  }
+
 }
 
 .big-picture {
