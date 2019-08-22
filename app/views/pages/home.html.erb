@@ -19,9 +19,7 @@
   <br>
   <%= form_tag county_search_path, method: :get do %>
   <div class="search-and-submit-box">
-  <%= text_field_tag :query, nil, input_html: {class: "form-control"},
-    placeholder: "Enter your county"
-  %>
+  <%= text_field_tag :query, nil, class: "form-control-home", placeholder: "  Enter your county"%>
   <%= submit_tag "Search", class: "btn btn-primary" %>
   </div>
 <% end %>
