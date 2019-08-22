@@ -3,8 +3,8 @@
   <br>
   <br>
   <br>
-  <br>
   <div class="county-name-and-search">
+  <%= image_tag "Freya_Logo_Orange-crop.png", alt: "alttext", :size => '230x230'%>
   <h1><%= @county.name %></h1>
   <%= form_tag county_search_path, method: :get do %>
   <br>
@@ -18,29 +18,28 @@
 </div>
 <div class="county-show-card-box">
 
-<div class="food-type-card meat">
-  <div class="food-type-textbox">
-    <p>Meats</p>
-  </div>
+<div class="food-group-icons floating">
+<%= link_to ingredients_path do %>
+<%= image_tag('cartoon-meat.png') %>
+<% end %>
 </div>
 
-<div class="food-type-card fruit">
-   <div class="food-type-textbox">
-    <p>Fruits</p>
-  </div>
+<div class="food-group-icons less-floating">
+<%= link_to ingredients_path do %>
+<%= image_tag('cartoon-vegetable.png') %>
+<% end %>
 </div>
 
-
-<div class="food-type-card fish">
-  <div class="food-type-textbox">
-    <p>Seafood</p>
-  </div>
+<div class="food-group-icons floating">
+<%= link_to ingredients_path do %>
+<%= image_tag('cartoon-fish.png') %>
+<% end %>
 </div>
 
-<div class="food-type-card vegetable">
-  <div class="food-type-textbox">
-    <p>Vegetables</p>
-  </div>
+<div class="food-group-icons less-floating">
+<%= link_to ingredients_path do %>
+<%= image_tag('cartoon-fruit.png') %>
+<% end %>
 </div>
 
 </div>
