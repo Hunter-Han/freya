@@ -6,15 +6,15 @@
   <div class="county-name-and-search">
   <%= image_tag "Freya_Logo_Orange-crop.png", alt: "alttext", :size => '230x230'%>
   <h1><%= @county.name %></h1>
-  <%= form_tag county_search_path, method: :get do %>
-  <br>
+ <%= form_tag county_search_path, class: "search" , method: :get do %>
   <div class="search-and-submit-box">
-  <%= text_field_tag :query, nil, input_html: {class: "form-control"},
-    placeholder: "Find seasonal food!"%>
-  <%= submit_tag "Ask Freya", class: "btn btn-primary" %>
+  <%= text_field_tag :query, nil, class: "form-control-home", placeholder: "  Enter your county"%>
+  <%= button_tag(type: "submit", class: "search-button") do %>
+    <div>Search</div>
+  <% end %>
   </div>
+  <% end %>
 
-<% end %>
 </div>
 <div class="county-show-card-box">
 
