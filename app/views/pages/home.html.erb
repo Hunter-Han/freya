@@ -5,22 +5,24 @@
 <br>
 <br>
 <br>
-<br>
 
 <div class="home-main-div">
 <div class="logo-box">
- <%= image_tag "logo.png", alt: "alttext", :size => '220x220'%>
+ <%= image_tag "Freya_Logo_Orange-crop.png", alt: "alttext", :size => '230x230'%>
 </div>
 <div class="title-box-home">
   <br>
 <h1>Freya</h1>
 </div>
-<div class="">
   <br>
-  <%= form_tag county_search_path, method: :get do %>
+
+  <%= form_tag county_search_path, class: "search" , method: :get do %>
   <div class="search-and-submit-box">
   <%= text_field_tag :query, nil, class: "form-control-home", placeholder: "  Enter your county"%>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
+  <%= button_tag(type: "submit", class: "search-button") do %>
+    <div>Search</div>
+  <% end %>
+
   </div>
 <% end %>
 </div>

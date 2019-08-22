@@ -26,11 +26,23 @@
 
 .search-and-submit-box {
   display: flex;
+  width: 300px;
+  transition: 0.5s;
+  height: 40px;
+  justify-content: center;
 
-  .btn.btn-primary {
+
+  .search-button {
   background-color: #FF6D24;
-  border-color: #FF6D24;
   border-radius: 0 5px 5px 0;
+  border: 0;
+  color: white;
+  // vertical-align: middle;
+  // padding: 0 auto;
+  // margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
   .form-control-home {
@@ -38,6 +50,7 @@
   }
 
 }
+
 
 .big-picture {
   background-image: url(blueberries-girl-two.jpg);
@@ -47,3 +60,31 @@
   color: #eee;
   margin-top: -63px;
 }
+
+
+.search {
+  width: 300px;
+  height: 40px;
+  background: #444;
+  background: rgba(0,0,0,.5);
+  border-radius: 5px 5px 5px 5px !important;
+  margin-top: 36px;
+  transition: 0.5s;
+ }
+.search:hover {
+transform: scale(1.1)
+}
+.search input {
+  vertical-align: center;
+  width: 370px;
+  padding: 10px 5px;
+  color: #ccc;
+  border: 0;
+  background: transparent;
+  border-radius: 3px 0 0 3px;}
+
+
+
+.search button:hover {background: #fff;color:#444;}
+.search button:active {box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);}
+
