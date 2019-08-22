@@ -129,7 +129,7 @@ winter_squash = Ingredient.new(
   description: "Pumpkins may get all the glory at Halloween, but there are many other versatile, vividly colored, flavorful, and nutrient-packed winter squash varieties to brighten up cold-weather meals. Sweeter, denser, and more firm in texture than summer squash or zucchini, autumn and winter squash take well to a wide spectrum of seasonings and can be true crowd-pleasers in warming soups, casseroles, risotto, lasagna, and even desserts."
   )
 winter_squash.remote_thumbnail_picture_url = "https://live.staticflickr.com/2636/3939743768_8baff98bf3_o.jpg"
-winter_squash.remote_background_picture_url = "https://assets.epicurious.com/photos/5893c1d869bb8db572652050/16:9/w_1280%2Cc_limit/winter-squash-varieties-020217.jpg"
+winter_squash.remote_background_picture_url = "https://images.unsplash.com/photo-1536713498860-c449aa1c0fae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1943&q=80"
 winter_squash.save
 
 IngredientSeason.create(
