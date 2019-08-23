@@ -19,7 +19,7 @@
   background-size: cover;
 
   background-color: rgb(230, 230, 230);
-
+}
   .county-name-and-search {
   display: flex;
   justify-content: space-around;
@@ -27,6 +27,12 @@
   align-items: center;
   height: 120px;
   margin-top: 100px;
+   h1 {
+    font-size: 110px;
+    color: white;
+    font-family: 'Amatic SC', bold;
+    letter-spacing: 15px;
+  }
 
   }
 
@@ -44,13 +50,6 @@
     transform: scale(1.05)
   }
 
-  h1 {
-    font-size: 120px;
-    color: white;
-    font-family: Bookman Old Style;
-    letter-spacing: 7px;
-  }
-}
 
 .county-show-card-box {
   display: flex;

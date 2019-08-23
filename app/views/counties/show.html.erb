@@ -8,9 +8,9 @@
   <h1><%= @county.name %></h1>
  <%= form_tag county_search_path, class: "search" , method: :get do %>
   <div class="search-and-submit-box">
-  <%= text_field_tag :query, nil, class: "form-control-home", placeholder: "  Enter your county"%>
+  <%= text_field_tag :query, nil, class: "form-control-home", placeholder: "Find seasonal ingredients"%>
   <%= button_tag(type: "submit", class: "search-button") do %>
-    <div>Search</div>
+    <div>Ask Freya!</div>
   <% end %>
   </div>
   <% end %>
