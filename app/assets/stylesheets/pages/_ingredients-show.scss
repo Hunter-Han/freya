@@ -1,0 +1,17 @@
+.show-background-image-ingredient {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -63px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ingredient-card  {
+  margin: 0 auto;
+  width: 50px;
+  display: flex;
+  background-color: white;
+  align-text: center;
+  justify-content: center;
+}
