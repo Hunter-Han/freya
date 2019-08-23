@@ -5,13 +5,76 @@
   margin-top: -63px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-top: 100px;
 }
 
 .ingredient-card  {
-  margin: 0 auto;
-  width: 50px;
+  margin: 70px auto;
+  height: 350px;
+  overflow: scroll;
+  width: 1000px;
   display: flex;
   background-color: white;
   align-text: center;
   justify-content: center;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  opacity: 0.85;
+  border-radius: 5px;
+  font-size: 30px;
+  font-family: Benton Sans;
+
+}
+
+.show-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.ingredient-name  {
+  background-color: white;
+  opacity: 0.85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 5px;
+  max-width: 100%;
+  height: 20vh;
+  padding: 0 20px;
+  flex-direction: column;
+
+}
+
+.ingredient-name h1  {
+  padding-top: 30px;
+  font-family: 'Amatic SC', bold;
+  font-style: bold;
+  font-variant: bold;
+  font-weight: 700;
+  line-height: 26.4px;
+  letter-spacing: 14px;
+  font-size: 100px;
+  margin: 0;
+  width: 100%;
+}
+.binomial-name  {
+  padding-top: 30px;
+  color: black;
+  font-style: italic;
+}
+
+.white-border-container {
+  border-style: solid;
+  border-color: white;
+  height: 90%;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 100px;
 }
