@@ -1,4 +1,3 @@
-require 'pry-byebug'
 class CountiesController < ApplicationController
   def search
     @county = County.find_by(name: params[:query].capitalize)
