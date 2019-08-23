@@ -1,3 +1,47 @@
-<% @ingredients.each do |ingredient| %>
-  <p><%= ingredient.name %></p>
+<% if params[:food_group] == "Fish" %>
+<div class="top-banner-card fish-position" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path 'fish-background.jpg' %>')">
+  <h1>
+  FISH
+  </h1>
+</div>
+
+<% elsif params[:food_group] == "Meat" %>
+<div class="top-banner-card meat-position" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path 'meat-background.jpg' %>')">
+  <h1>
+  MEAT
+  </h1>
+</div>
+<% elsif params[:food_group] == "Vegetable" %>
+<div class="top-banner-card  vegetable-position" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path 'vegetable-background-2.jpg' %>')">
+  <h1>
+  VEGETABLES
+  </h1>
+</div>
+<% else params[:food_group] == "Fruit" %>
+<div class="top-banner-card fruit-position" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path 'fruit-background.jpg' %>')">
+  <h1>
+  FRUIT
+  </h1>
+</div>
 <% end %>
+
+<% months = ['January','February','March','April','May','June','July','August','September','October','November','December'] %>
+<% county = County.find_by id: params[:county_id] %>
+<% if Date.today.day > 15 %>
+<% stage = "late" %>
+<% else %>
+<% stage = "early" %>
+<% end %>
+
+<div class=container>
+
+<h1 class='heading-container'> Available in <%= county.name %> in <%= stage %> <%= months[Date.today.month.to_i - 1] %></h1>
+
+<% current_time = Time.now %>
+<% @ingredients.each do |ingredient| %>
+  <li> <%=  ingredient.name %> </li>
+<% end %>
+
+
+</div>
+

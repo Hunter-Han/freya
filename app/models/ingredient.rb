@@ -6,4 +6,14 @@ class Ingredient < ApplicationRecord
 
   mount_uploader :thumbnail_picture, PhotoUploader
   mount_uploader :background_picture, PhotoUploader
+
+# def in_season?
+#   seasons = Self.ingredient_seasons
+#   current_time = Time.now
+
+#   seasons.each do |season|
+#     if
+# end
+
 end
+
