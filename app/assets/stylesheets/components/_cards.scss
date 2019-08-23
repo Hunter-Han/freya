@@ -1,0 +1,63 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.veg-card, .veg-card-long {
+    height: 480px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.ingredient-card, .veg-card-long {
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,.16);
+}
+
+.top-banner-card{
+  background-size: cover;
+  height: 525px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: -63px;
+  h1{
+    font-family: 'Amatic SC', bold;
+  font-size: 72px;
+  font-style: bold;
+  font-variant: bold;
+  font-weight: 700;
+  line-height: 26.4px;
+  letter-spacing: 14px;
+  }
+}
+
+.vegetable-position{
+  background-position: 50% 90%;
+}
+
+.fruit-position{
+  background-position: 50% 65%;
+}
+
+.meat-position{
+    background-position: 50% 55%;
+  }
+
+.fish-position{
+  background-position: 50% 50%;
+  width: 100vw
+}
