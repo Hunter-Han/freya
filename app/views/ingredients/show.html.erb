@@ -1,23 +1,18 @@
 <div class="show-background-image-ingredient" style="background-image:url('<%= cl_image_path @ingredient.background_picture%>')">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="ingredient-card">
-    <p><%=@ingredient.name%></p>
+  <div>
+  <div class="white-border-container">
+  <div class="show-container">
+    <div class="ingredient-name">
+      <h1><%=@ingredient.name%></h1>
+      <br>
+      <div class="binomial-name">
+        <h3><%=@ingredient.binomial%></h3>
+      </div>
+    </div>
+    <div class="ingredient-card">
+      <div><p><%=@ingredient.description%></p></div>
+    </div>
+  </div>
+  </div>
   </div>
 </div>
