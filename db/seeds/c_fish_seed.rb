@@ -10,7 +10,7 @@ mackerel = Ingredient.new(
   )
 mackerel.remote_thumbnail_picture_url = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/03/Mackerel-fish-locally-caught-sustainable-devon.jpg?lossy=1&strip=1&webp=1"
 mackerel.remote_background_picture_url = "https://live.staticflickr.com/2456/3714416458_1abfda650a_b.jpg"
-mackerel.save
+mackerel.save!
 
 IngredientSeason.create(
   county: sussex,
@@ -28,7 +28,7 @@ european_flounder = Ingredient.new(
   )
 european_flounder.remote_thumbnail_picture_url = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/03/Flounder-freshly-stored-local-fish-south-west.jpg?lossy=1&strip=1&webp=1"
 european_flounder.remote_background_picture_url= "https://live.staticflickr.com/844/43413684192_87cf2c6a7d_o.jpg"
-european_flounder.save
+european_flounder.save!
 
 IngredientSeason.create(
   county: sussex,
@@ -46,7 +46,7 @@ scallop = Ingredient.new(
   )
 scallop.remote_thumbnail_picture_url = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/02/Scallops-shellfish-fishing-fresh-caught.jpg?lossy=1&strip=1&webp=1"
 scallop.remote_background_picture_url = "https://live.staticflickr.com/570/22928282804_01d1d97ef3_o.jpg"
-scallop.save
+scallop.save!
 
 IngredientSeason.create(
   county: sussex,
@@ -64,7 +64,7 @@ brown_crab = Ingredient.new(
   )
 brown_crab.remote_thumbnail_picture_url  = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/03/Brown-crab-freshly-caught-local-fish.jpg?lossy=1&strip=1&webp=1"
 brown_crab.remote_background_picture_url = "https://live.staticflickr.com/7741/18398874185_c7aab0e4af_o.jpg"
-brown_crab.save
+brown_crab.save!
 
 IngredientSeason.create(
   county: sussex,
@@ -81,7 +81,7 @@ tub_gurnard = Ingredient.new(
   )
 tub_gurnard.remote_thumbnail_picture_url = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/02/Gurnards-fresh-fish-locally-caught.jpg?lossy=1&strip=1&webp=1"
 tub_gurnard.remote_background_picture_url = "https://live.staticflickr.com/8237/8557372018_dcae2d07de_o.jpg"
-tub_gurnard.save
+tub_gurnard.save!
 
 IngredientSeason.create(
   county: sussex,
@@ -98,7 +98,7 @@ sea_bass = Ingredient.new(
   )
 sea_bass.remote_thumbnail_picture_url = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/02/Sea-bass-european-1.jpg?lossy=1&strip=1&webp=1"
 sea_bass.remote_background_picture_url = "https://www.aquanaria.com/wp-content/uploads/2018/10/lubina-aquanaria-2-1.jpg"
-sea_bass.save
+sea_bass.save!
 
 IngredientSeason.create(
   county: sussex,
@@ -123,7 +123,7 @@ herring = Ingredient.new(
   )
 herring.remote_thumbnail_picture_url = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/03/Herring-fish-images-sustainably-caught-fish.jpg?lossy=1&strip=1&webp=1"
 herring.remote_background_picture_url = "https://images.unsplash.com/photo-1565062044382-95c12c17f062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
-herring.save
+herring.save!
 
 IngredientSeason.create(
   county: sussex,
@@ -139,8 +139,8 @@ lobster = Ingredient.new(
   description: "The lobster is arguably the king of shellfish. The European lobster, the species commonly found in Sussex, is blue in colour, apart from its antennae which are bright red. Its left claw is smaller than the right. The left is used for precise cutting, and the right is dedicated to crushing."
   )
 lobster.remote_thumbnail_picture_url = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/02/Lobster-fresh-european-fish-market.jpg?lossy=1&strip=1&webp=1"
-lobster.remote_background_picture_url = "https://live.staticflickr.com/3846/15065598580_37ffa501e0_o.jpg"
-lobster.save
+lobster.remote_background_picture_url = "https://live.staticflickr.com/8494/8326884721_343c515c39_o.jpg"
+lobster.save!
 
 IngredientSeason.create(
   county: sussex,
@@ -158,7 +158,7 @@ monkfish = Ingredient.new(
   )
 monkfish.remote_thumbnail_picture_url = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/02/Monk-fish-tail-fresh-fish-local-caught.jpg?lossy=1&strip=1&webp=1"
 monkfish.remote_background_picture_url = "https://live.staticflickr.com/5223/5616816318_50013f09e2_b.jpg"
-monkfish.save
+monkfish.save!
 
 IngredientSeason.create(
   county: sussex,
@@ -175,7 +175,7 @@ red_mullet = Ingredient.new(
   )
 red_mullet.remote_thumbnail_picture_url = "https://693715.smushcdn.com/1216652/wp-content/uploads/2019/02/Red-mullet-freshly-caught.jpg?lossy=1&strip=1&webp=1"
 red_mullet.remote_background_picture_url = "https://live.staticflickr.com/1658/25150804489_eb76a0908d_o.jpg"
-red_mullet.save
+red_mullet.save!
 
 IngredientSeason.create(
   county: sussex,

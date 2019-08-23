@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'counties/search', to: 'counties#search', as: :county_search
-  resources :counties, only: [:show, :index]
+  resources :counties, only: [:show, :index] do
+    resources :ingredients, only: [:index]
+  end
   resources :food_groups, only: [:show, :index]
-  resources :ingredients
+  resources :ingredients, except: [:index]
   resources :ingredient_at_vendors
   resources :ingredient_seasons, only: [:index, :show]
   resources :review, except: [:edit, :update]
