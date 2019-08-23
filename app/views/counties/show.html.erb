@@ -19,25 +19,25 @@
 <div class="county-show-card-box">
 
 <div class="food-group-icons floating">
-<%= link_to ingredients_path do %>
+<%= link_to county_ingredients_path(@county, food_group: "Meat") do %>
 <%= image_tag('cartoon-meat.png') %>
 <% end %>
 </div>
 
 <div class="food-group-icons less-floating">
-<%= link_to ingredients_path do %>
+<%= link_to county_ingredients_path(@county, food_group: "Vegetable") do %>
 <%= image_tag('cartoon-vegetable.png') %>
 <% end %>
 </div>
 
 <div class="food-group-icons floating">
-<%= link_to ingredients_path do %>
+<%= link_to county_ingredients_path(@county, food_group: "Fish") do %>
 <%= image_tag('cartoon-fish.png') %>
 <% end %>
 </div>
 
 <div class="food-group-icons less-floating">
-<%= link_to ingredients_path do %>
+<%= link_to county_ingredients_path(@county, food_group: "Fruit") do %>
 <%= image_tag('cartoon-fruit.png') %>
 <% end %>
 </div>
