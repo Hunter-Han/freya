@@ -1,3 +1,11 @@
+/*layout for card grid */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+/*styling for card components */
 .card {
     position: relative;
     display: flex;
@@ -6,19 +14,56 @@
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+    padding: 0;
+    border-radius: 15px;
+    &:hover{
+      transition: 0.25s;
+      opacity: 1;
+      transform: scale(1.10);
+  }
 }
 
 .veg-card, .veg-card-long {
-    height: 480px;
+    height: 300px;
     margin-bottom: 50px;
-    width: 100%;
+    width: 93%;
 }
 
 .ingredient-card, .veg-card-long {
     background-color: #fff;
     box-shadow: 0 0 5px 1px rgba(0,0,0,.16);
+}
+
+.card-img{
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.ingredient-card-info{
+  height: 100px;
+  padding-left: 15px;
+  padding-top:10px;
+  background: white;
+  border-radius: 0 0 15px 15px;
+  color: black;
+  h2 {
+    font-family: 'Amatic SC', bold;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+  }
+}
+
+.info-header{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
 }
 
 .top-banner-card{

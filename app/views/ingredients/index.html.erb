@@ -1,3 +1,4 @@
+<div class= 'textured-background'>
 <% if params[:food_group] == "Fish" %>
 <div class="top-banner-card fish-position" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path 'fish-background.jpg' %>')">
   <h1>
@@ -33,15 +34,40 @@
 <% stage = "early" %>
 <% end %>
 
-<div class=container>
+<div class='container index-container'>
 
 <h1 class='heading-container'> Available in <%= county.name %> in <%= stage %> <%= months[Date.today.month.to_i - 1] %></h1>
 
-<% current_time = Time.now %>
-<% @ingredients.each do |ingredient| %>
-  <li> <%=  ingredient.name %> </li>
-<% end %>
+<div class="cards">
 
+<% current_time = Time.now %>
+ <% @ingredients.each do |ingredient| %>
+ <div style= "text-decoration: none">
+   <%= link_to ingredient_path(ingredient), {:style=>'text-decoration: none'} do %>
+    <div class="card veg-card-long">
+      <div class = "card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= ingredient.thumbnail_picture %>)">
+      </div>
+      <div class= "ingredient-card-info">
+        <div class = "info-header" >
+        <h2> <%= ingredient.name %> </h2>
+         <% ingredient_season = IngredientSeason.where({county: current_user.county, ingredient: ingredient}).first %>
+        <% months = ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'] %>
+        <%= months[ingredient_season.start.month - 1] %> - <%= months[ingredient_season.end.month- 1]  %>
+        </div>
+
+        <h3> <%= ingredient.binomial %> </h3>
+
+      </div>
+  </div>
+  <%end%>
+  </div>
+<% end %>
+</div>
+
+
+
+
+</div>
 
 </div>
 
