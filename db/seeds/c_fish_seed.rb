@@ -57,7 +57,7 @@ IngredientSeason.create(
 #brown crab
 brown_crab = Ingredient.new(
   food_group: @fish,
-  name: "Brown crab",
+  name: "Brown Crab",
   binomial: "Cancer pagurus",
   description: "The Sussex coast is famous for its brown crab. Easily identifiable from its distinctive pie crust shell, brown crab meat is succulent and sweet."
 

@@ -72,7 +72,7 @@ IngredientSeason.create(
 #apples
 apple = Ingredient.new(
   food_group: @fruit,
-  name: "Apple",
+  name: "Apples",
   binomial: "Malus domestica",
   description: "Grown in temperate regions, apples are one of the most widely cultivated tree fruits. There are over 7,000 varieties in existence, many of which are grown in Britain but, despite that, only around 12 varieties are commonly sold in UK supermarkets, of which many are imported. Colours range from red, to yellow and green, but all varieties fall into one of two categories: eating, also sometimes called dessert apples (including Cox's Orange Pippin, Golden Delicious, Granny Smiths, Braeburn, Gala, Pink Lady and Jonagold) or cooking, with the latter being more tart in flavour, a result of their higher levels of malic acid (the best is Bramley, though Blenheim Orange, Grenadier, Reverend W Wilkes and Ida Red are also available). The texture can be very crisp and juicy or more yielding, according to variety. Choose firm fruit, with no blemishes, bruising or wrinkles. Don't be fooled by a very shiny skin - many apples are waxed to make them look good. And don't discard an apple with dry brown patches ('scald') - it's just the result of overexposure to sunlight and won't affect the quality."
   )
@@ -123,7 +123,7 @@ IngredientSeason.create(
 #blueberries
 blueberry = Ingredient.new(
   food_group: @fruit,
-  name: "Blueberry",
+  name: "Blueberries",
   binomial: "Cyanococcus",
   description: "Blueberries are one of the few edibles native to North America and credited with being particularly high in antioxidants. They're now grown very widely internationally but the ever-increasing number of varieties marketed means there's no reliable guide to flavour, sweetness or texture. They're credited with many different health benefits if a handful or so is eaten every day, but this is only true if eaten raw. Cooked blueberries lose a great deal of nutrition and most also forfeit flavour; only small, sharp wild blueberries picked directly in Maine are likely to retain flavour when cooked, such as in a blueberry muffin – others more often become a purple tasteless mush. Choose - there's no immediate clue to flavour based on colour, size, variety or country of origin; thus, it’s worth remembering the variety noted on the label when you find one you like. Check for firmness of the berries and look for any obvious softness or broken skins, which will indicate they're not in top condition."
   )
@@ -157,7 +157,7 @@ IngredientSeason.create(
 #apricots
 apricot = Ingredient.new(
   food_group: @fruit,
-  name: "Apricot",
+  name: "Apricots",
   binomial: "Prunus armeniaca",
   description: "A relative of the peach, nectarine, plum and cherry, apricots are fragrant, with a soft, velvety skin that ranges from pale yellow to deep orange. Inside there's a large kernel that will fall out easily if the flesh is ripe. Apricots need a warm climate to thrive - in the summer most come from hot European countries, and there's also a short winter season for apricots grown in Chile and South Africa. Choose apricots whose flesh is moderately firm with some give. An apricot's colour is not always a reliable guide to flavour, but steer clear of very pale varieties, and always avoid wrinkled or blemished skins."
   )

@@ -1,6 +1,6 @@
 class IngredientsController < ApplicationController
   def search
-    @ingredient = Ingredient.find_by(name: params[:query].capitalize)
+    @ingredient = Ingredient.find_by(name: params[:query].split.map(&:capitalize).join(' '))
     if @ingredient
       redirect_to ingredient_path(@ingredient)
     else

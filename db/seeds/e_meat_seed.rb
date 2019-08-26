@@ -21,7 +21,7 @@ IngredientSeason.create(
 #roe venison
 roe_venison = Ingredient.new(
   food_group: @meat,
-  name: "Roe venison",
+  name: "Roe Venison",
   binomial: "Capreolus capreolus",
   description: "Venison is the generic term for meat from deer and there are six species of deer in this country, all producing venison with distinctive eating qualities. Like all our game, our venison comes from wild animals which have never been to an abattoir. Four species are regularly available in our area - red, fallow, roe and muntjac - but the most common are fallow and muntjac."
   )
@@ -72,7 +72,7 @@ IngredientSeason.create(
 #grouse
 grouse = Ingredient.new(
   food_group: @meat,
-  name: "Red grouse",
+  name: "Red Grouse",
   binomial: "Lagapus lagapus scotticus",
   description: "Whilst not native to Sussex, grouse are the king of gamebirds. They have a very strong and distinctive flavour and accordingly are greatly in demand. Their diet is restricted to the heather on the moorlands in northern Britain where they live, and this is why their flavour is 'heathery'! They are the earliest game bird to come into season on 12 August but their season also finishes early on the 10 December when the moors are generally snow covered. During the beginning of the season birds born that year, called ‘young’ grouse, are particularly tender and are best plain roasted. During the beginning of the season birds born that year, called ‘young’ grouse, are particularly tender and are best plain roasted."
   )
@@ -123,7 +123,7 @@ IngredientSeason.create(
 #rabbit
 rabbit = Ingredient.new(
   food_group: @meat,
-  name: "Wild rabbit",
+  name: "Wild Rabbit",
   binomial: "Oryctolagus cuniculus",
   description: "Rabbit is enjoying a renaissance with many celebrity chefs and restaurants putting it back on their menus although it remains undervalued. It was part of the staple diet for country people since Norman times. Rabbit is similar in appearance to chicken and has a firmer texture. The flavour can be enhanced by hanging or diluted by soaking the meat in salty water (or water with added vinegar) for two or three hours before cooking.  This process also ‘cleans’ the meat of any blood residue."
   )
@@ -140,7 +140,7 @@ IngredientSeason.create(
 #pigeon
 pigeon = Ingredient.new(
   food_group: @meat,
-  name: "Wood pigeon",
+  name: "Wood Pigeon",
   binomial: "Columba palumbus",
   description: "They may be annoying in your vegetable garden but woodpigeons eat the finest food from our farms and gardens and so produce a delicious dark meat. The woodpigeon should not be confused with the town pigeon - which is a feral rock dove. Woodpigeons are predominantly birds of the countryside although they are common in town gardens and parks. Being a pest to farmers and gardeners, they are shot all year round so it is available fresh throughout the year."
   )
@@ -157,7 +157,7 @@ IngredientSeason.create(
 #wild duck
 duck = Ingredient.new(
   food_group: @meat,
-  name: "Wild duck",
+  name: "Wild Duck",
   binomial: "Anas platyrhynchos",
   description: "Wild duck differ from farmed duck sold in the supermarket in that they are not fatty and have stronger flavours. The best known wild duck are mallard which can become quite tame when found on lakes and village ponds. As the largest of the wild ducks, mallard are the only species used by restaurants as two servings can be obtained from one duck. This is a shame as it means few people have a chance to taste the other types of wild duck, particularly teal which are delicious - if a little small!
 
