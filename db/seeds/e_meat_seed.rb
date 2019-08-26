@@ -76,7 +76,7 @@ grouse = Ingredient.new(
   binomial: "Lagapus lagapus scotticus",
   description: "Whilst not native to Sussex, grouse are the king of gamebirds. They have a very strong and distinctive flavour and accordingly are greatly in demand. Their diet is restricted to the heather on the moorlands in northern Britain where they live, and this is why their flavour is 'heathery'! They are the earliest game bird to come into season on 12 August but their season also finishes early on the 10 December when the moors are generally snow covered. During the beginning of the season birds born that year, called ‘young’ grouse, are particularly tender and are best plain roasted. During the beginning of the season birds born that year, called ‘young’ grouse, are particularly tender and are best plain roasted."
   )
-grouse.remote_thumbnail_picture_url = "https://live.staticflickr.com/5791/23682132819_17bfcfd2cc_k.jpg"
+grouse.remote_thumbnail_picture_url = "https://cdn.shopify.com/s/files/1/0391/7709/products/Wild_Meat_Company241_grouse_web_1024x1024.jpg?v=1494002337"
 grouse.remote_background_picture_url = "https://live.staticflickr.com/4416/37200966412_3c15df23c1_o.jpg"
 grouse.save
 
