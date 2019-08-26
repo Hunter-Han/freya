@@ -1,18 +1,37 @@
 <div class="show-background-image-ingredient" style="background-image:url('<%= cl_image_path @ingredient.background_picture%>')">
   <div>
   <div class="white-border-container">
-  <div class="show-container">
-    <div class="ingredient-name">
-      <h1><%=@ingredient.name%></h1>
-      <br>
-      <div class="binomial-name">
-        <h3><%=@ingredient.binomial%></h3>
+    <div class="show-container">
+      <div class="show-container-left">
+        <div class="ingredient-name">
+          <h1><%=@ingredient.name%></h1>
+          <br>
+          <div class="binomial-name">
+            <h3><%=@ingredient.binomial%></h3>
+          </div>
+        </div>
+        <div class="ingredient-card">
+          <div><p><%=@ingredient.description%></p></div>
+        </div>
+      </div>
+      <div class="show-container-right">
+        <div
+          id="map"
+          style="width: 100%;
+          height: 600px;"
+          data-mapbox-api-key= <%= ENV['MAPBOX_API_KEY']  %>
+        ></div>
+        <br>
+        <br>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea quis culpa, illo beatae dolor eligendi, obcaecati deleniti, veniam dolores cupiditate, repudiandae veritatis. Perspiciatis, ullam, odit? Iure illo magni nobis maiores unde laudantium debitis sunt assumenda, nihil impedit ab commodi fugiat! Labore veritatis, assumenda provident pariatur quae adipisci natus, numquam animi expedita optio nam! Assumenda ipsa laborum corporis non sint beatae ab quisquam libero! Deserunt aliquam tempora culpa ullam fuga aut eaque magni saepe dolor libero, ratione dignissimos laboriosam officia eos praesentium incidunt dicta laudantium ea mollitia, atque reprehenderit beatae quia sapiente nam! Eveniet magnam unde eos numquam facere placeat?</p>
+        </div>
+        <div class="container-for-both-buttons">
+          <div class="box-one"><p>Where to Buy?</p></div>
+          <div class="box-two"><p>Recipes!</p></div>
+        </div>
       </div>
     </div>
-    <div class="ingredient-card">
-      <div><p><%=@ingredient.description%></p></div>
-    </div>
-  </div>
   </div>
   </div>
 </div>
