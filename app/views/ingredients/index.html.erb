@@ -48,8 +48,15 @@
       <div class = "card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= ingredient.thumbnail_picture %>)">
       </div>
       <div class= "ingredient-card-info">
+        <div class = "info-header" >
         <h2> <%= ingredient.name %> </h2>
-        <h3> <%=   ingredient.binomial %> </h3>
+         <% ingredient_season = IngredientSeason.where({county: current_user.county, ingredient: ingredient}).first %>
+        <% months = ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'] %>
+        <%= months[ingredient_season.start.month - 1] %> - <%= months[ingredient_season.end.month- 1]  %>
+        </div>
+
+        <h3> <%= ingredient.binomial %> </h3>
+
       </div>
   </div>
   <%end%>
