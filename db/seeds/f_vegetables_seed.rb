@@ -42,7 +42,7 @@ artichoke = Ingredient.new(
   binomial: "Cynara scolymus",
   description: "The artichoke is actually the bud of a thistle—a flower. The leaves (called “bracts”) cover a fuzzy center called the “choke”, which sits on top of a meaty core, called the “heart”. The heart is completely edible (and amazingly delicious). The fuzzy choke is too fibrous to eat in regular artichokes, but edible in baby artichokes. All but the innermost leaves are tough and you have to scrape them with your teeth to eat the tender parts. Choose artichokes that feel heavy when you pick them up. If they feel light, they’re probably a bit dried out and not as meaty as they should be. If you squeeze the artichoke, the leaves should “squeak”. This is another way you can tell the artichoke is fresh. The leaves should be closed with just a little separation, not flayed wide open. Remember an artichoke is a flower bud, as it ages, the leaves open up. So an artichoke with wide open leaves may be on the old side.If an artichoke looks like it has been burned by frost, no worries. In fact, these less-than-beautiful artichokes can taste even better than those not touched by frost and often command a premium price because of it."
   )
-artichoke.remote_thumbnail_picture_url = "https://unsplash.com/photos/GQ62pYNohW0"
+artichoke.remote_thumbnail_picture_url = "https://images.unsplash.com/photo-1545400037-66992ab1a76f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
 artichoke.remote_background_picture_url = "https://images.unsplash.com/photo-1557840704-759ba2741139?ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"
 artichoke.save
 
