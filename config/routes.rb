@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-
+  get 'ingredients/search', to: 'ingredients#search', as: :ingredient_search
   get 'counties/search', to: 'counties#search', as: :county_search
   resources :counties, only: [:show, :index] do
     resources :ingredients, only: [:index]
