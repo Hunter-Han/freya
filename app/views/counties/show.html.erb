@@ -6,7 +6,8 @@
   <div class="county-name-and-search">
   <%= image_tag "Freya_Logo_Orange-crop.png", alt: "alttext", :size => '230x230'%>
   <h1><%= @county.name %></h1>
- <%= form_tag county_search_path, class: "search" , method: :get do %>
+
+ <%= form_tag ingredient_search_path, class: "search" , method: :get do %>
   <div class="search-and-submit-box">
   <%= text_field_tag :query, nil, class: "form-control-home", placeholder: "Find seasonal ingredients"%>
   <%= button_tag(type: "submit", class: "search-button") do %>
