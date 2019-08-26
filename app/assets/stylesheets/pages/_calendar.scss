@@ -1,0 +1,65 @@
+.fuck_you {
+  background-color: grey;
+  height: 100vh;
+}
+
+.months-container {
+  margin: left 100px;
+ display: flex;
+ height: 100px;
+ width: 1200px;
+}
+
+.month {
+  border-style: solid;
+  border-width-right: 0px;
+ width: 100px;
+ height: 100%;
+ background-color: green;
+}
+
+.month-red {
+  border-style: solid;
+  border-width: 1px;
+  border-width-right: 0px;
+  border-color: grey;
+  width: 120px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  position: relative;
+  .month-title {
+  position: absolute;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  p {
+    font-family: 'Amatic SC';
+    font-size: 33px;
+    text-align:center;
+    padding:0;
+    margin:0;
+    margin-bottom: 3px;
+    }
+  }
+}
+
+.tiny-date {
+  width: 5px;
+  height: 100%;
+  background-color: limegreen;
+}
+
+.tiny-date-red {
+  width: 5px;
+  height: 100%;
+  background-color: white;
+}
+
+.tiny-today {
+    width: 5px;
+  height: 100%;
+  background-color: red;
+}
