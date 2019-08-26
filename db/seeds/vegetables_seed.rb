@@ -124,7 +124,7 @@ IngredientSeason.create(
 #winter squash - october, november, december
 winter_squash = Ingredient.new(
   food_group: @vegetable,
-  name: "winter_squash",
+  name: "Winter Squash",
   binomial: "Cucurbita",
   description: "Pumpkins may get all the glory at Halloween, but there are many other versatile, vividly colored, flavorful, and nutrient-packed winter squash varieties to brighten up cold-weather meals. Sweeter, denser, and more firm in texture than summer squash or zucchini, autumn and winter squash take well to a wide spectrum of seasonings and can be true crowd-pleasers in warming soups, casseroles, risotto, lasagna, and even desserts."
   )
