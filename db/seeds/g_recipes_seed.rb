@@ -16,7 +16,7 @@ pomegranate_sorbet.save
 
 pomegranate_beef = Recipe.new(
   ingredient: @pomegranate,
-  name: "Beef Short Ribs",
+  name: "Pomegranate Beef Short Ribs",
   hours_preparation: 3.75,
   description: "Pomegranate juice and red wine compose a rich ruby-red sauce for tender beef short ribs. Garnish with jewel-like pomegranate seeds just before serving—they give tang and color and make the dish look fancy in a flash.",
   instructions: "1. Preheat oven to 275 degrees. In a large heavy pot with a tight-fitting lid, heat 2 tablespoons oil over high. Season short ribs with salt and pepper. In batches, brown ribs on all sides. Transfer to a plate, pour off oil, and wipe loose bits out of pot.\n
@@ -31,7 +31,7 @@ pomegranate_beef.save
 
 pomegranate_pizza = Recipe.new(
   ingredient: @pomegranate,
-  name: "Eggplant, Pistachio, and Pomegranate Pizza",
+  name: "Pomegranate, Eggplant and Pistachio Pizza",
   hours_preparation: 0.5,
   description: "Pomegranate as a pizza topping? You bet! The colorful, crunchy seeds make a lovely foil for eggplant, pistachios, , and cilantro.",
   instructions: "1. Preheat oven to 475 degrees. Form dough (as directed in Basic Pizza Dough recipe) in a 9-by-13-inch rimmed baking sheet. Arrange eggplant lengthwise on dough, 3 slices side-by-side on top half, 3 on bottom half; press into dough. Drizzle with oil, and sprinkle with salt and red-pepper flakes.\n
@@ -59,7 +59,7 @@ pomegranate_sangria.save
 
 pomegranate_potato = Recipe.new(
   ingredient: @pomegranate,
-  name: "Sweet Potatoes with Coconut, Pomegranate, and Lime",
+  name: "Sweet Potatoes with Pomegranate, Coconut, and Lime",
   hours_preparation: 4,
   description: "This dish adds tropical flavor to a nutrient-rich sweet potato by topping it with cilantro, coconut flakes, and pomegranate seeds.",
   instructions: "1. Heat oven to 400 degrees. Arrange sweet potatoes, pricked with a fork, on rimmed baking sheet and roast until tender, about 45 minutes. Let cool slightly.\n
@@ -73,7 +73,7 @@ pomegranate_potato.save
 
 pomegranate_relish = Recipe.new(
   ingredient: @pomegranate,
-  name: "Cranberry-Pomegranate Relish",
+  name: "Pomegranate-Cranberry Relish",
   hours_preparation: 0.333333333,
   description: "Pair this sweet and tangy relish with our Roast Turkey with Rosemary and Lemon. Use any leftovers as a sandwich spread or stirred into yogurt as a dip.",
   instructions: "1. In a medium saucepan, heat oil over medium-high. Add shallot; cook, stirring constantly, until softened, 3 minutes. Add cranberries, pomegranate juice, and brown sugar; season with salt and pepper. Bring to a boil, then reduce to a simmer and cook, stirring occasionally, until cranberries have burst and sauce is slightly thickened, 10 minutes. Remove from heat. Stir in pomegranate seeds (if using). Let cool to room temperature before serving.",
