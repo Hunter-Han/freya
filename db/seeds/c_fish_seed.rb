@@ -103,12 +103,6 @@ sea_bass.save!
 IngredientSeason.create(
   county: sussex,
   ingredient: sea_bass,
-  start: Date.new(2019,3,1),
-  end: Date.new(2019,5,1)
-  )
-IngredientSeason.create(
-  county: sussex,
-  ingredient: sea_bass,
   start: Date.new(2019,11,1),
   end: Date.new(2020,1,15)
   )

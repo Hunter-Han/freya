@@ -7,13 +7,11 @@ class Ingredient < ApplicationRecord
   mount_uploader :thumbnail_picture, PhotoUploader
   mount_uploader :background_picture, PhotoUploader
 
-# def in_season?
-#   seasons = Self.ingredient_seasons
-#   current_time = Time.now
-
-#   seasons.each do |season|
-#     if
-# end
+  def in_season?
+    season = self.ingredient_seasons.first
+    current_month = Date.today
+    date_range = (season.start..season.end)
+    date_range.include? current_month
+  end
 
 end
-

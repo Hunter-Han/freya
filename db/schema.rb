@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_20_093759) do
+ActiveRecord::Schema.define(version: 2019_08_27_082609) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,18 @@ ActiveRecord::Schema.define(version: 2019_08_20_093759) do
     t.string "background_picture"
     t.string "binomial"
     t.index ["food_group_id"], name: "index_ingredients_on_food_group_id"
+  end
+
+  create_table "recipes", force: :cascade do |t|
+    t.string "name"
+    t.float "hours_preparation"
+    t.text "description"
+    t.text "instructions"
+    t.text "shopping_list"
+    t.bigint "ingredient_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ingredient_id"], name: "index_recipes_on_ingredient_id"
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -108,6 +120,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_093759) do
   add_foreign_key "ingredient_seasons", "counties"
   add_foreign_key "ingredient_seasons", "ingredients"
   add_foreign_key "ingredients", "food_groups"
+  add_foreign_key "recipes", "ingredients"
   add_foreign_key "reviews", "users"
   add_foreign_key "reviews", "vendors"
   add_foreign_key "vendors", "counties"

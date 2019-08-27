@@ -32,7 +32,7 @@ IngredientSeason.create(
   county: sussex,
   ingredient: brussel_sprout,
   start: Date.new(2019,10,1),
-  end:Date.new(2012,2,28)
+  end:Date.new(2020,2,28)
   )
 
 #artichokes - march, april, may
@@ -168,12 +168,6 @@ spinach.remote_thumbnail_picture_url = "https://live.staticflickr.com/3314/46169
 spinach.remote_background_picture_url = "https://images.unsplash.com/photo-1565489348099-73ff648c76ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 spinach.save
 
-IngredientSeason.create(
-  county: sussex,
-  ingredient: spinach,
-  start: Date.new(2019,4,01),
-  end:Date.new(2019,5,31)
-  )
 IngredientSeason.create(
   county: sussex,
   ingredient: spinach,

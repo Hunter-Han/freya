@@ -11,7 +11,11 @@ class IngredientsController < ApplicationController
   def index
     @county = County.find(params[:county_id])
     @food_group = FoodGroup.find_by(name: params[:food_group])
-    @ingredients = @county.ingredients.where(food_group: @food_group)
+    ingr = @county.ingredients.where(food_group: @food_group)
+    @ingredients = []
+    ingr.each do |ingredient|
+      @ingredients << ingredient if ingredient.in_season?
+    end
   end
 
   def show
