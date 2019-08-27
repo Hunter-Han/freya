@@ -8,8 +8,9 @@ Rails.application.routes.draw do
   end
   resources :food_groups, only: [:show, :index]
   resources :ingredients, except: [:index] do
-    resources :recipes, only: [:show, :index]
+    resources :recipes, only: [:index]
   end
+  resources :recipes, only: [:show]
   resources :ingredient_at_vendors
   resources :ingredient_seasons, only: [:index, :show]
   resources :review, except: [:edit, :update]
