@@ -171,12 +171,6 @@ spinach.save
 IngredientSeason.create(
   county: sussex,
   ingredient: spinach,
-  start: Date.new(2019,4,01),
-  end:Date.new(2019,5,31)
-  )
-IngredientSeason.create(
-  county: sussex,
-  ingredient: spinach,
   start: Date.new(2019,9,1),
   end:Date.new(2019,10,31)
   )
