@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "deleting everthing"
+Recipe.destroy_all
 IngredientAtVendor.destroy_all
 IngredientSeason.destroy_all
 Ingredient.destroy_all

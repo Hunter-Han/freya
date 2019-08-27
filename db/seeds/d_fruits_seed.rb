@@ -50,7 +50,7 @@ IngredientSeason.create(
   county: sussex,
   ingredient: gooseberry,
   start: Date.new(2019,6,1),
-  end:Date.new(2019,8,10)
+  end:Date.new(2019,8,31)
 )
 #quinces
 quince = Ingredient.new(
@@ -172,20 +172,20 @@ IngredientSeason.create(
   end:Date.new(2019,8,31)
 )
 
-pomegranate = Ingredient.new(
+@pomegranate = Ingredient.new(
   food_group: @fruit,
   name: "Pomegranate",
   binomial: "Punica granatum",
   description: "Mainly grown in America, Spain, the Middle East and India, pomegranates originated in the area from Northern India to Iran. However, you may be surprised to learn that these fruiting trees are surprisingly hardy and can do well in a sheltered spot in most parts of the UK, particularly in couthern coutnies like Sussex. They have a round shape, like an apple, with a hard, shiny skin blushed with red or yellow. Inside, scores of edible little white seeds are held in jewel-like, ruby-coloured sacs filled with sweet, juicy flesh. The sacs themselves are packed in a bitter, pale yellow pith. Pomegranates have always been highly prized for their flavour, but their recent emergence as a highly nutritious superfood, packed with antioxidant vitamins, has made them even more popular. The skin and the pith should not be eaten. Choose pomegranates with unblemished, shiny skins. Those that feel heavy for their size are the juiciest. Avoid any with soft patches."
   )
-pomegranate.remote_thumbnail_picture_url = "https://images.unsplash.com/photo-1553499944-5472133459bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2725&q=80"
-pomegranate.remote_background_picture_url = "https://images.unsplash.com/photo-1541344999736-83eca272f6fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+@pomegranate.remote_thumbnail_picture_url = "https://images.unsplash.com/photo-1553499944-5472133459bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2725&q=80"
+@pomegranate.remote_background_picture_url = "https://images.unsplash.com/photo-1541344999736-83eca272f6fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 # https://unsplash.com/photos/zknpEEBmMCM
-pomegranate.save
+@pomegranate.save
 
 IngredientSeason.create(
   county: sussex,
-  ingredient: pomegranate,
+  ingredient: @pomegranate,
   start: Date.new(2019,8,15),
   end:Date.new(2020,2,15)
 )
@@ -207,19 +207,3 @@ IngredientSeason.create(
   end:Date.new(2019,9,15)
 )
 
-raspberry = Ingredient.new(
-  food_group: @fruit,
-  name: "Raspberry",
-  binomial: "Rubus idaeus",
-  description: "A member of the rose family, raspberries have a wonderfully intense, sweet taste, and many consider them to be the finest flavoured of all the berries. Raspberries grow well in cool, damp climates, and the red varieties, such as Heritage and Malling Jewel, are the most commonly sold, though you can also find black, yellow and golden types. They are an essential ingredient in the classic English dessert, Summer pudding, and their flavour combines well with that of other berries. Choose bright, evenly coloured and plump berries, with no mushy or mouldy examples. If you're buying a punnet, check that the underside isn't stained - that means the lower level of berries has been crushed. Avoid raspberries with their hulls still attached; that indicates that they were picked before they were ripe, so their flavour will be tart."
-  )
-raspberry.remote_thumbnail_picture_url = "https://live.staticflickr.com/4114/4760256801_b7d705490e_b.jpg"
-raspberry.remote_background_picture_url = "https://live.staticflickr.com/1809/28254294187_1b4d3136b4_k.jpg"
-raspberry.save
-
-IngredientSeason.create(
-  county: sussex,
-  ingredient:raspberry,
-  start: Date.new(2019,7,15),
-  end:Date.new(2019,9,15)
-)
