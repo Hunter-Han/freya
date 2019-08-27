@@ -3,6 +3,7 @@
   <div class="white-border-container">
     <div class="show-container">
       <div class="show-container-left">
+                <div class="border-radius-description">
         <div class="ingredient-name">
           <h1><%=@ingredient.name%></h1>
           <br>
@@ -10,28 +11,336 @@
             <h3><%=@ingredient.binomial%></h3>
           </div>
         </div>
-        <div class="ingredient-card">
+        <div class="ingredient-card-show">
           <div><p><%=@ingredient.description%></p></div>
         </div>
+      </div>
       </div>
       <div class="show-container-right">
         <div
           id="map"
           style="width: 100%;
-          height: 600px;"
+          height: 530.5px; "
           data-mapbox-api-key= <%= ENV['MAPBOX_API_KEY']  %>
         ></div>
-        <br>
-        <br>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea quis culpa, illo beatae dolor eligendi, obcaecati deleniti, veniam dolores cupiditate, repudiandae veritatis. Perspiciatis, ullam, odit? Iure illo magni nobis maiores unde laudantium debitis sunt assumenda, nihil impedit ab commodi fugiat! Labore veritatis, assumenda provident pariatur quae adipisci natus, numquam animi expedita optio nam! Assumenda ipsa laborum corporis non sint beatae ab quisquam libero! Deserunt aliquam tempora culpa ullam fuga aut eaque magni saepe dolor libero, ratione dignissimos laboriosam officia eos praesentium incidunt dicta laudantium ea mollitia, atque reprehenderit beatae quia sapiente nam! Eveniet magnam unde eos numquam facere placeat?</p>
-        </div>
-        <div class="container-for-both-buttons">
-          <div class="box-one"><p>Where to Buy?</p></div>
+<!--         <div class="container-for-both-buttons">
+          <div class="box-one"><p>Near me</p></div>
           <div class="box-two"><p>Recipes!</p></div>
-        </div>
+        </div> -->
       </div>
     </div>
+<% ingredient_season = IngredientSeason.where({ county: current_user.county, ingredient: @ingredient }).first  %>
+
+
+<div class="months-container">
+
+    <div class="month-red">
+ <div class="month-title"><p>Jan</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 1, 1) %>
+  <% beginning2 = Date.new(2020, 1, 1) %>
+
+
+  <% 31.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
   </div>
+
+
+      <div class="month-red">
+<div class="month-title"><p>Feb</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 2, 1) %>
+  <% beginning2 = Date.new(2020, 2, 1) %>
+
+
+  <% 28.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+
+      <div class="month-red">
+<div class="month-title"><p>Mar</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 3, 1) %>
+  <% beginning2 = Date.new(2020, 3, 1) %>
+
+
+  <% 31.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+
+      <div class="month-red">
+<div class="month-title"><p>Apr</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 4, 1) %>
+  <% beginning2 = Date.new(2020, 4, 1) %>
+
+
+  <% 30.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+
+    <div class="month-red">
+    <div class="month-title"><p>May</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 5, 1) %>
+  <% beginning2 = Date.new(2020, 5, 1) %>
+
+
+  <% 31.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+      <div class="month-red">
+ <div class="month-title"><p>Jun</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 6, 1) %>
+  <% beginning2 = Date.new(2020, 6, 1) %>
+
+
+  <% 30.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+    <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+      <div class="month-red">
+ <div class="month-title"><p>Jul</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 7, 1) %>
+  <% beginning2 = Date.new(2020, 7, 1) %>
+
+
+  <% 31.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+       <div class="month-red">
+ <div class="month-title"><p>Aug</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 8, 1) %>
+  <% beginning2 = Date.new(2020, 8, 1) %>
+
+
+  <% 31.times do %>
+
+    <div class="<% if beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+          <% elsif tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+    <div class="month-red">
+ <div class="month-title"><p>Sept</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 9, 1) %>
+  <% beginning2 = Date.new(2020, 9, 1) %>
+
+
+  <% 30.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+      <div class="month-red">
+ <div class="month-title"><p>Oct</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 10, 1) %>
+  <% beginning2 = Date.new(2020, 10, 1) %>
+
+
+  <% 31.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+     <div class="month-red">
+ <div class="month-title"><p>Nov</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 11, 1) %>
+  <% beginning2 = Date.new(2020, 11, 1) %>
+
+
+  <% 30.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+    <div class="month-red">
+ <div class="month-title"><p>Dec</p></div>
+  <% tiny_array = (ingredient_season.start..ingredient_season.end) %>
+  <% beginning = Date.new(2019, 12, 1) %>
+  <% beginning2 = Date.new(2020, 12, 1) %>
+
+
+  <% 31.times do %>
+
+    <div class="<% if tiny_array.include?(beginning) || tiny_array.include?(beginning2) %>
+      <%= "tiny-date" %>
+          <% elsif beginning == Date.today || beginning2 == Date.today %>
+      <%= "tiny-today" %>
+    <% else  %>
+      <%= "tiny-date-red" %>
+    <% end %>
+    ">
+    </div>
+
+  <% beginning += 1 %>
+  <% beginning2 += 1 %>
+  <% end %>
+
+  </div>
+
+</div>
+
+
+
   </div>
 </div>
