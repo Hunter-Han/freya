@@ -12,6 +12,7 @@ pomegranate_sorbet = Recipe.new(
   )
 
 pomegranate_sorbet.remote_thumbnail_picture_url = "https://live.staticflickr.com/6040/7012426863_5a197d8ca2_c.jpg"
+pomegranate_sorbet.save
 
 pomegranate_beef = Recipe.new(
   ingredient: @pomegranate,
@@ -26,6 +27,7 @@ pomegranate_beef = Recipe.new(
   )
 
 pomegranate_beef.remote_thumbnail_picture_url = "https://imageresizer.static9.net.au/LVmUPapQc_XU5PYKdOBDbxIymFY=/600x338/smart/http%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FImages%2FKitchen%2F2016%2F03%2F16%2F03%2F22%2F1603-ribspomegranate-recipe.jpg"
+pomegranate_beef.save
 
 pomegranate_pizza = Recipe.new(
   ingredient: @pomegranate,
@@ -40,7 +42,7 @@ pomegranate_pizza = Recipe.new(
   )
 
 pomegranate_pizza.remote_thumbnail_picture_url = "https://assets.marthastewart.com/styles/wmax-520-highdpi/d34/pollock-eggplant-007-exp1-md110824/pollock-eggplant-007-exp1-md110824_horiz.jpg?itok=g9r-GdCF"
-
+pomegranate_pizza.save
 
 pomegranate_sangria = Recipe.new(
   ingredient: @pomegranate,
@@ -53,6 +55,7 @@ pomegranate_sangria = Recipe.new(
   )
 
 pomegranate_sangria.remote_thumbnail_picture_url = "https://heatherchristo.com/wp-content/uploads/2014/10/Autumn-Sangria-from-HeatherChristo.com_.jpg"
+pomegranate_sangria.save
 
 pomegranate_potato = Recipe.new(
   ingredient: @pomegranate,
@@ -66,6 +69,7 @@ pomegranate_potato = Recipe.new(
   )
 
 pomegranate_potato.remote_thumbnail_picture_url = "https://assets.marthastewart.com/styles/wmax-300/d23/mbd106526_1210_sweetpot/mbd106526_1210_sweetpot_hd.jpg?itok=lyrnVzC6"
+pomegranate_potato.save
 
 pomegranate_relish = Recipe.new(
   ingredient: @pomegranate,
@@ -78,3 +82,4 @@ pomegranate_relish = Recipe.new(
   )
 
 pomegranate_relish.remote_thumbnail_picture_url = "https://assets.marthastewart.com/styles/wmax-300/d36/med106155_1110_tkg_cranberry_rellish/med106155_1110_tkg_cranberry_rellish_vert.jpg?itok=OImWl0Ez"
+pomegranate_relish.save
