@@ -21,7 +21,7 @@
         <h2> <%= recipe.name %> </h2>
         <% hours = recipe.hours_preparation %>
         <% if recipe.hours_preparation >= 1 %>
-          <h3> <strong> <%= hours %> </strong>  hours preparation </h3>
+          <h3> <strong> <%= hours %> </strong> hours preparation </h3>
         <% else %>
         <h3> <strong> <%= (60 * hours).round %> </strong> minutes preparation </h3>
         <% end %>
