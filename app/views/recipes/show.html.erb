@@ -1,0 +1,32 @@
+<div class="show-background-image-ingredient" style="background-image:url('<%= cl_image_path @recipe.thumbnail_picture%>')">
+  <div>
+  <div class="white-border-container">
+    <div class="show-container">
+      <div class="show-container-left">
+                <div class="border-radius-description">
+        <div class="recipe-name">
+          <h1><%=@recipe.name%></h1>
+          <br>
+         <!--  <div class="binomial-name">
+            <h3> Serves <%=@recipe.serves%> people</h3>
+          </div> -->
+        </div>
+        <div class="recipe-card-show">
+          <div><p><%=@recipe.description%></p></div>
+          <br>
+          <p> <strong> Instructions </strong> </p>
+          <p> <%= @recipe.instructions %> </p>
+        </div>
+      </div>
+      </div>
+      <div class="show-container-right">
+        <div>
+        <%= @recipe.shopping_list %>
+        </div>
+<!--         <div class="container-for-both-buttons">
+          <div class="box-one"><p>Near me</p></div>
+          <div class="box-two"><p>Recipes!</p></div>
+        </div> -->
+      </div>
+    </div>
+
