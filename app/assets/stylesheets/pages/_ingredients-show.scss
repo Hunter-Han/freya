@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
 .show-background-image-ingredient {
   background-size: cover;
   width: 100vw;
-  height: 130vh;
+  height: 110vh;
   margin-top: -63px;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -9,7 +11,7 @@
 }
 
 .ingredient-card-show  {
-  height: 50vh;
+  height: 400px;
   overflow: scroll;
   width: 100%;
   display: flex;
@@ -23,9 +25,9 @@
   opacity: 0.85;
   border-radius: 5px;
   font-size: 30px;
-  font-family: Benton Sans;
+  font-family: "Roboto Condensed";
   p {
-    font-size: 18px;
+    font-size: 20px;
     text-align: justify;
   }
 
@@ -72,7 +74,7 @@
   align-items: center;
   color: black;
   max-width: 100%;
-  height: 17vh;
+  height: 120px;
   padding: 0 20px;
   flex-direction: column;
   text-align: center;
@@ -112,6 +114,7 @@
   margin-right: 200px;
   margin-left: 200px;
   margin-bottom: 100px;
+  padding-bottom: 25px;
 }
 
 .container-for-both-buttons {
@@ -121,39 +124,49 @@
 }
 .box-one {
   display: flex;
-  background-color: white;
-  margin: 30px;
-  width: 50%;
+  background-color: #FF6A34;
+  width: 24%;
   justify-content: center;
   align-items: center;
   text-align: center;
   vertical-align: middle;
-  line-height: 40px;
   border-radius: 5px;
-  opacity: 0.85;
-  font-family: 'Amatic SC', bold;
-  font-style: bold;
+  padding: 3px;
+  padding-top: 12px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 5px;
+  right: 5px;
+  h3 {
+    color: white;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+     font-style: bold;
   font-variant: bold;
-  font-size: 50px;
-  padding: 10px;
+  }
 }
 .box-two {
   display: flex;
-  background-color: white;
-  margin: 30px;
-  width: 50%;
+  background-color: #FF6A34;
+  width: 20%;
   justify-content: center;
   align-items: center;
   text-align: center;
   vertical-align: middle;
-  line-height: 40px;
   border-radius: 5px;
-  opacity: 0.85;
-  font-family: 'Amatic SC', bold;
-  font-style: bold;
+  padding: 3px;
+  padding-top: 12px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 5px;
+  left: 5px;
+  h3 {
+    color: white;
+  font-family: "Roboto Condensed";
+    font-size: 20px;
+     font-style: bold;
   font-variant: bold;
-  font-size: 50px;
-  padding: 10px;
+  }
 }
 
 .box-one p {
@@ -167,7 +180,6 @@
 #map {
   border-top-right-radius: 10px;
   border-bottom-right-radius:10px;
-  height: 300px;
   border-left-style: solid;
   border-left-width: 2px;
   border-left-color: grey;
@@ -175,29 +187,23 @@
 
 
 .months-container {
-  margin: left 100px;
  display: flex;
- height: 80px;
+ height: 70px;
  width: 100%;
+ margin-left: 35px;
 }
 
-.month {
-  border-style: solid;
-  border-width-right: 0px;
- width: 100px;
- height: 100%;
- background-color: green;
-}
 
 .month-red {
   border-style: solid;
   border-width: 1px;
   border-width-right: 0px;
   border-color: grey;
-  width: 100.8px;
+  width: 95px;
   height: 100%;
   display: flex;
   position: relative;
+
   .month-title {
   position: absolute;
   height: 100%;
@@ -208,7 +214,7 @@
   z-index: 1;
   p {
     font-family: 'Amatic SC';
-    font-size: 33px;
+    font-size: 38px;
     text-align:center;
     padding:0;
     margin:0;
