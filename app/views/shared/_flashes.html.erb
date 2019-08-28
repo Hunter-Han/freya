@@ -16,11 +16,11 @@
   <div class="logo-box-flash" style = 'text-align:center'>
     <%= image_tag "logo_red.png", alt: "alttext", :size => '230x230'%>
   </div>
-  <% ingr = @ingredient.name.downcase %>
-  <% ingredient_season = IngredientSeason.where({ county: current_user.county, ingredient: @ingredient }).first  %>
-  <% ingredient_season_month = ingredient_season.start %>
+  <% ingr = @ingredient.name.downcase if @ingredient %>
+  <% ingredient_season = IngredientSeason.where({ county: current_user.county, ingredient: @ingredient }).first if @ingredient %>
+  <% ingredient_season_month = ingredient_season.start if @ingredient %>
   <% months = ['January','February','March','April','May','June','July','August','September','October','November','December'] %>
-  <div style = 'text-align:center'>It seems <%= ingr.pluralize %> aren't in season until <%= months[ingredient_season_month.month - 1] %>. Why not ask <span class='oops-f'>Freya</span> for something fresh and local.</div>
+  <div style = 'text-align:center'>It seems <%= ingr.pluralize if @ingredient %> aren't in season until <%= months[ingredient_season_month.month - 1] if @ingredient %>. Why not ask <span class='oops-f'>Freya</span> for something fresh and local.</div>
   </div>
   </div>
 <% end %>

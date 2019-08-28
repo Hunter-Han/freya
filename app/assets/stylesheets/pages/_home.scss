@@ -26,10 +26,12 @@
 
 .search-and-submit-box {
   display: flex;
-  width: 350px;
+  width: 420px;
   transition: 0.5s;
-  height: 40px;
+  height: 50px;
   justify-content: center;
+    display: flex;
+  justify-content: space-between;
 
 
   .search-button {
@@ -65,8 +67,8 @@
 
 
 .search {
-  width: 350px;
-  height: 40px;
+  width: 400px;
+  height:50px;
   background: #444;
   background: rgba(0,0,0,.5);
   border-radius: 5px 5px 5px 5px !important;
@@ -79,7 +81,8 @@ transform: scale(1.1)
 .search input {
   margin-left: 10px;
   vertical-align: center;
-  width: 370px;
+  width: 420px;
+  height: 50px;
   padding: 10px 5px;
   color: #ccc;
   border: 0;
