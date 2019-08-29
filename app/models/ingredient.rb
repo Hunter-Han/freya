@@ -4,6 +4,7 @@ class Ingredient < ApplicationRecord
   has_many :ingredient_seasons
   has_many :ingredient_at_vendors
   has_many :recipes
+  has_many :vendors, through: :ingredient_at_vendors
 
   mount_uploader :thumbnail_picture, PhotoUploader
   mount_uploader :background_picture, PhotoUploader
