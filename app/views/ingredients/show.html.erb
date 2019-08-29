@@ -23,13 +23,12 @@
           style="width: 100%;
           height: 525px; "
           data-mapbox-api-key= <%= ENV['MAPBOX_API_KEY']  %>
-        ><%= link_to ingredient_recipes_path(@ingredient) do %>
-<div class="box-two"><h3>Recipes!</h3>
-</div>
-<% end %>
-<div class="box-one"><h3>Find vendors</h3></div></div>
+        >
+<%= link_to ingredient_recipes_path(@ingredient) do %>
+<div class="box-one"><h3>Recipes!</h3></div></div>
 
       </div>
+      <% end %>
     </div>
 <% ingredient_season = IngredientSeason.where({ county: current_user.county, ingredient: @ingredient }).first  %>
 
