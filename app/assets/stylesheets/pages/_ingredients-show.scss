@@ -137,12 +137,22 @@
   z-index: 10;
   bottom: 5px;
   right: 5px;
+  transition: 0.5s;
   h3 {
+    transition: 0.3s;
     color: white;
     font-family: "Roboto Condensed";
     font-size: 20px;
      font-style: bold;
   font-variant: bold;
+  }
+}
+
+.box-one:hover {
+  transform: scale(1.02);
+
+  h3 {
+    color: black;
   }
 }
 .box-two {
@@ -241,6 +251,6 @@
 .tiny-today {
     width: 5px;
   height: 100%;
-  background-color: #F63737;
+  background-color: #FF6A34;
 }
 

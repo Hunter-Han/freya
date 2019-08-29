@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
 
 .show-county-background {
-  width: 100vw;
-  height: 100vh;
-
-}
-
-.background-sussex {
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -14,13 +8,20 @@
   background-image: asset-url("cliffs2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  background-size: cover;
+
+  background-color: rgb(230, 230, 230);
+
+}
+
+.background-sussex {
+  width: 100vw;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  background-size: cover;
-
-  background-color: rgb(230, 230, 230);
 }
 
 .tagline-container{
@@ -41,10 +42,10 @@
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  height: 120px;
-  margin-top: 70px;
+  height: 80px;
+  margin-top: 300px;
    h1 {
-    font-size: 110px;
+    font-size: 150px;
     color: white;
     font-family: 'Amatic SC', bold;
     letter-spacing: 15px;
@@ -67,11 +68,12 @@
 
 
 .county-show-card-box {
+  margin-top: 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  height: 30vh;
+  height: 100px;
 }
 
 .food-group-icons{
