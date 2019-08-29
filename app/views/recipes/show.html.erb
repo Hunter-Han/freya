@@ -1,9 +1,13 @@
-<div class="show-background-image-ingredient" style="background-image:url('<%= cl_image_path @recipe.thumbnail_picture%>')">
+<div class="recipe-background" style="height: 104vh; margin-top: -67px;">
   <div>
+    <br>
+    <br>
+    <br>
+        <br>
   <div class="white-border-container">
-    <div class="show-container">
-      <div class="show-container-left">
-                <div class="border-radius-description">
+    <div class="show-container-recipe">
+      <div class="show-container-left-recipe">
+                <div class="border-radius-description-recipe">
         <div class="recipe-name">
           <h1><%=@recipe.name%></h1>
           <br>
@@ -12,17 +16,35 @@
           </div> -->
         </div>
         <div class="recipe-card-show">
-          <div><p><%=@recipe.description%></p></div>
-          <br>
-          <p> <strong> Instructions </strong> </p>
-          <p> <%= @recipe.instructions %> </p>
+          <div class="show-container-left">
+          <h3><%=@recipe.description%></h3>
+                     <%@recipe.shopping_list.split(';;;').each do |item| %>
+                     <p style="margin-top: 0px;"> <%= item %> </p>
+                      <% end %>
+                      <br>
+          <p style="margin-bottom: 5px;"> <strong> Instructions </strong> </p>
+                               <%@recipe.instructions.split(',;;;').each do |item| %>
+                     <p style="margin-top: 0px;"> <%= item %> </p>
+                      <% end %>
+        </div>
         </div>
       </div>
       </div>
-      <div class="show-container-right">
-        <div>
-        <%= @recipe.shopping_list %>
-        </div>
+      <div class="show-container-right-recipe" style="background-image:url('<%= @recipe.thumbnail_picture%>')">
+<%= link_to(:back) do %>
+<div class="recipe-button-holder">
+<div class="box-two-recipe"><h3>View more recipes</h3>
+</div>
+<% end %>
+<%= link_to ingredient_path(@recipe.ingredient) do %>
+<div class="box-one-recipe"><h3>Ingredient page</h3></div></div>
+</div>
+<% end %>
+<!--         <div class="container-for-both-buttons">
+          <div class="box-one"><p>Near me</p></div>
+          <div class="box-two"><p>Recipes!</p></div>
+        </div> -->
+      </div>
 <!--         <div class="container-for-both-buttons">
           <div class="box-one"><p>Near me</p></div>
           <div class="box-two"><p>Recipes!</p></div>

@@ -20,6 +20,6 @@ class IngredientsController < ApplicationController
 
   def show
     @ingredient = Ingredient.find(params[:id])
-    flash.now[:alert] = "" if !@ingredient.in_season?
+    flash.now[:alert] = "" if !@ingredient.in_season? && @ingredient
   end
 end
