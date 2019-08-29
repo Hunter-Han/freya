@@ -17,7 +17,7 @@
 <h2 class='tagline'> Find fresh with Freya </h2>
   <%= form_tag county_search_path, class: "search" , method: :get do %>
   <div class="search-and-submit-box">
-  <%= text_field_tag :query, nil, class: "form-control-home", placeholder: "Enter your county"%>
+  <%= text_field_tag :query, nil, class: "form-control-home search-text", placeholder: "Enter your county"%>
   <%= button_tag(type: "submit", class: "search-button") do %>
     <div>Search</div>
   <% end %>
