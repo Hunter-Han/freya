@@ -194,6 +194,26 @@
   border-left-width: 2px;
   border-left-color: grey;
   position: relative;
+
+  .mapboxgl-popup {
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  h1 {
+    font-size: 20px;
+  }
+  p {
+  font-family:'Josefin Sans', thin;
+  font-size: 10px;
+  }
+  .info-image {
+
+  }
+}
+
 }
 
 
@@ -253,4 +273,3 @@
   height: 100%;
   background-color: #FF6A34;
 }
-

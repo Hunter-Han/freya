@@ -21,5 +21,15 @@ class IngredientsController < ApplicationController
   def show
     @ingredient = Ingredient.find(params[:id])
     flash.now[:alert] = "" if !@ingredient.in_season? && @ingredient
+
+    @vendors = Vendor.where(county: current_user.county)
+
+    @markers = @vendors.map do |vendor|
+      {
+        lat: vendor.latitude,
+        lng: vendor.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { vendor: vendor })
+      }
+    end
   end
 end
