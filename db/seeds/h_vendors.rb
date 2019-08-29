@@ -7,6 +7,7 @@ cowdray = Vendor.new(
   longitude: -0.725903,
   latitude: 50.994654,
   price_range: 5,
+  link: 'https://www.cowdray.co.uk/cowdray-farm-shop/'
   )
 
 cowdray.remote_picture_url = "https://media-cdn.tripadvisor.com/media/photo-s/0f/c7/84/18/cowdray-farm-shop.jpg"

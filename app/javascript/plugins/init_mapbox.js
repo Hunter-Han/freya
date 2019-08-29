@@ -13,13 +13,17 @@ attributionControl: false
   });
 };
 
+
 const addMarkersToMap = (map, markers) => {
   markers.forEach((marker) => {
+     const popup = new mapboxgl.Popup().setHTML(marker.infoWindow);
     new mapboxgl.Marker()
       .setLngLat([ marker.lng, marker.lat ])
+      .setPopup(popup)
       .addTo(map);
   });
 };
+
 
 const fitMapToMarkers = (map, markers) => {
   const bounds = new mapboxgl.LngLatBounds();
