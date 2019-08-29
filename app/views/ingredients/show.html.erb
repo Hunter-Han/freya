@@ -28,10 +28,7 @@
 </div>
 <% end %>
 <div class="box-one"><h3>Find vendors</h3></div></div>
-<!--         <div class="container-for-both-buttons">
-          <div class="box-one"><p>Near me</p></div>
-          <div class="box-two"><p>Recipes!</p></div>
-        </div> -->
+
       </div>
     </div>
 <% ingredient_season = IngredientSeason.where({ county: current_user.county, ingredient: @ingredient }).first  %>
