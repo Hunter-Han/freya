@@ -30,11 +30,11 @@
       </div>
       </div>
       <div class="show-container-right-recipe" style="background-image:url('<%= @recipe.thumbnail_picture%>')">
-<%= link_to(:back) do %>
 <div class="recipe-button-holder">
+  <a href="../ingredients/<%= @recipe.ingredient_id %>/recipes#recipes">
 <div class="box-two-recipe"><h3>View more recipes</h3>
 </div>
-<% end %>
+</a>
 <%= link_to ingredient_path(@recipe.ingredient) do %>
 <div class="box-one-recipe"><h3>Ingredient page</h3></div></div>
 </div>
