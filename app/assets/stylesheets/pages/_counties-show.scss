@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
+
 .show-county-background {
   width: 100vw;
   height: 100vh;
@@ -20,6 +22,20 @@
 
   background-color: rgb(230, 230, 230);
 }
+
+.tagline-container{
+  h2 {
+    color: white;
+    font-family: 'Josefin Sans', thin;
+    font-weight: lighter;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    width: 1000px;
+    padding-top: -20px;
+    }
+}
+
   .county-name-and-search {
   display: flex;
   justify-content: space-around;
