@@ -24,7 +24,7 @@
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 14px;
-  font-size: 50px;
+  font-size: 45px;
   margin: 0;
   width: 100%;
   }
@@ -99,7 +99,7 @@
 .recipe-background {
   background-image: asset-url('cuttingboard-dark.jpg');
   width: 100vw;
-  padding-top: 70px;
+  padding-top: 0px;
   background-size: cover;
   width: 100vw;
   height:120vh;
@@ -119,8 +119,8 @@
   padding-top: 12px;
   position: absolute;
   z-index: 1000;
-  bottom: 13px;
-  right: 185px;
+  bottom: 60px;
+  right: 240px;
   h3 {
     color: white;
     font-family: 'Josefin Sans';
@@ -142,8 +142,8 @@
   padding-top: 12px;
   position: absolute;
   z-index: 1000;
-  bottom: 13px;
-  left: 200px;
+  bottom: 60px;
+  left: 250px;
   h3 {
     color: white;
   font-family: "Roboto Condensed";
