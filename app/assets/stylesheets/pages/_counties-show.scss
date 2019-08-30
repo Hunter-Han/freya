@@ -4,8 +4,8 @@
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  margin-top: -62px;
-  background-image: asset-url("cliffs2-dark.jpg");
+  // margin-top: -62px;
+  background-image: asset-url("cliffs2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 
@@ -32,10 +32,12 @@
     font-size: 25px;
     display: flex;
     text-align: center;
-    width: 1000px;
+    width: 700px;
     padding-top: -20px;
     }
 }
+
+
 
   .county-name-and-search {
   display: flex;
