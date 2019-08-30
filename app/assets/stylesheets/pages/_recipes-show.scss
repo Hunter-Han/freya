@@ -99,6 +99,12 @@
 .recipe-background {
   background-image: asset-url('cuttingboard-dark.jpg');
   width: 100vw;
+  padding-top: 70px;
+  background-size: cover;
+  width: 100vw;
+  height:120vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .box-one-recipe {
   display: flex;
