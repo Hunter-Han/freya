@@ -8,8 +8,8 @@ const buildMap = () => {
     container: 'map',
     style: 'mapbox://styles/pleaseletmemakeanaccount/cjzttbm4f0gr41do5xb2j8x5v',
     center: [-0.477, 50.9280],
-zoom: 8.5,
-attributionControl: false
+    zoom: 8.5,
+    attributionControl: false
   });
 };
 
